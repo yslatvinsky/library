@@ -6,7 +6,7 @@ import src.com.yslatvinsky.library.Entity.AuthorEntity;
 
 public interface IAuthorDAO {
 
-    public void addAuthor (AuthorEntity authorEntityEntity);
+    public void addAuthor (AuthorEntity authorEntity);
     public List<AuthorEntity> listAuthorEntity();
     public void removeAuthor(Integer id);
 }
