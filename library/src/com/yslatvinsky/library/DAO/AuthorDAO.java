@@ -1,13 +1,12 @@
 
 package src.com.yslatvinsky.library.DAO;
 
-import java.util.List;
-
-import src.com.yslatvinsky.library.Entity.AuthorEntity;
-
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
+import src.com.yslatvinsky.library.Entity.AuthorEntity;
+
+import java.util.List;
 
 
 @Repository
@@ -20,7 +19,7 @@ public class AuthorDAO implements IAuthorDAO {
         sessionFactory.getCurrentSession().save(AuthorEntity);
     }
 
-    public List<AuthorEntity> listContact() {
+    public List<AuthorEntity> listAuthorEntity() {
 
         return sessionFactory.getCurrentSession().createQuery("from Contact").list();
     }

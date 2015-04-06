@@ -5,74 +5,74 @@ import javax.validation.constraints.NotNull;
 import java.util.Date;
 
 
-/** author_id serial NOT NULL,
- author_fio character varying NOT NULL,
- author_bio text,
- author_data_birth date,
- CONSTRAINT author_pkey PRIMARY KEY (author_id)*/
+/** authorId serial NOT NULL,
+ authorFio character varying NOT NULL,
+ authorBio text,
+ authorDataBirth date,
+ CONSTRAINT author_pkey PRIMARY KEY (authorId)*/
 
 @Entity
 @Table(name="Author")
 public class AuthorEntity {
 
-    //author_id
+    //authorId
     @Id
     @Column(name = "author_id")
     @SequenceGenerator(name = "author_id_seq", sequenceName = "author_id_seq", allocationSize = 1)
     //пишется только автогенерируемых значений
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "author_id_seq")
     @NotNull
-    private Integer author_id;
+    private Integer authorId;
 
-    //author_fio
+    //authorFio
     @Column(name = "author_fio")
     @NotNull
-    private String author_fio;
+    private String authorFio;
 
-    //author_bio
+    //authorBio
     @Column(name = "author_bio")
-    private String author_bio;
+    private String authorBio;
 
-    // author_data_birth
+    // authorDataBirth
     @Column(name = "author_data_birth")
-    private Date author_data_birth;
+    private Date authorDataBirth;
 
-    // SetGet author_id
-    public void setAuthor_id(Integer author_id) {
-        this.author_id = author_id;
+    // SetGet authorId
+    public void setAuthorId(Integer authorId) {
+        this.authorId = authorId;
     }
 
-    public Integer getAuthor_id() {
-        return author_id;
-    }
-
-
-    // SetGet author_fio
-    public void setAuthor_fio(String author_fio) {
-        this.author_fio = author_fio;
-    }
-
-    public String getAuthor_fio() {
-        return author_fio;
+    public Integer getAuthorId() {
+        return authorId;
     }
 
 
-    // SetGet  author_bio
-    public void setAuthor_bio(String author_bio) {
-        this.author_bio = author_bio;
+    // SetGet authorFio
+    public void setAuthorFio(String authorFio) {
+        this.authorFio = authorFio;
     }
 
-    public String getAuthor_bio() {
-        return author_bio;
+    public String getAuthorFio() {
+        return authorFio;
     }
 
-    // SetGet author_data_birth
-    public void setAuthor_data_birth(Date author_data_birth) {
-        this.author_data_birth = author_data_birth;
+
+    // SetGet  authorBio
+    public void setAuthorBio(String authorBio) {
+        this.authorBio = authorBio;
     }
 
-    public Date getAuthor_data_birth() {
-        return author_data_birth;
+    public String getAuthorBio() {
+        return authorBio;
+    }
+
+    // SetGet authorDataBirth
+    public void setAuthorDataBirth(Date authorDataBirth) {
+        this.authorDataBirth = authorDataBirth;
+    }
+
+    public Date getAuthorDataBirth() {
+        return authorDataBirth;
     }
 
 }

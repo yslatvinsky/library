@@ -10,8 +10,8 @@ public class BookOfAuthorEntity {
 
 
     /**id serial NOT NULL,
-     book_id integer NOT NULL,
-     author_id integer,*/
+     bookId integer NOT NULL,
+     authorId integer,*/
 
     //id
     @Id
@@ -22,15 +22,15 @@ public class BookOfAuthorEntity {
     @NotNull
     private Integer id;
 
-    // book_id
+    // bookId
     @Column(name="book_id")
     @NotNull
-    private Integer book_id;
+    private Integer bookId;
 
-    // author_id
+    // authorId
     @Column(name="author_id")
     @NotNull
-    private Integer author_id;
+    private Integer authorId;
 
 
 
