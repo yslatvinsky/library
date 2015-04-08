@@ -1,4 +1,4 @@
-package src.com.yslatvinsky.library.Entity;
+package com.yslatvinsky.library.Entity;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;

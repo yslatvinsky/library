@@ -1,6 +1,6 @@
-package src.com.yslatvinsky.library.Service;
+package com.yslatvinsky.library.Service;
 
-import src.com.yslatvinsky.library.Entity.AuthorEntity;
+import com.yslatvinsky.library.Entity.AuthorEntity;
 
 import java.util.List;
 

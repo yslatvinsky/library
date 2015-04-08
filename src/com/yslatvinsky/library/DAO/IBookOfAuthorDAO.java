@@ -1,6 +1,6 @@
-package src.com.yslatvinsky.library.DAO;
+package com.yslatvinsky.library.DAO;
 
-import src.com.yslatvinsky.library.Entity.BookOfAuthorEntity;
+import com.yslatvinsky.library.Entity.BookOfAuthorEntity;
 import java.util.List;
 
 public interface IBookOfAuthorDAO {

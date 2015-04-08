@@ -1,12 +1,12 @@
-package src.com.yslatvinsky.library.Service;
+package com.yslatvinsky.library.Service;
 
 
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import src.com.yslatvinsky.library.Entity.AuthorEntity;
-import src.com.yslatvinsky.library.DAO.AuthorDAO;
+import com.yslatvinsky.library.Entity.AuthorEntity;
+import com.yslatvinsky.library.DAO.AuthorDAO;
 import java.util.List;
 
 @Service

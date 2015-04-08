@@ -1,5 +1,5 @@
-package src.com.yslatvinsky.library.Service;
-import src.com.yslatvinsky.library.Entity.BookOfAuthorEntity;
+package com.yslatvinsky.library.Service;
+import com.yslatvinsky.library.Entity.BookOfAuthorEntity;
 
 import java.util.List;
 

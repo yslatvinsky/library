@@ -1,7 +1,7 @@
-package src.com.yslatvinsky.library.DAO;
+package com.yslatvinsky.library.DAO;
 
 
-import src.com.yslatvinsky.library.Entity.AuthorEntity;
+import com.yslatvinsky.library.Entity.AuthorEntity;
         import java.util.List;
 
 public interface IAuthorDAO {

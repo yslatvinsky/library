@@ -1,8 +1,8 @@
-package src.com.yslatvinsky.library.DAO;
+package com.yslatvinsky.library.DAO;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
-import src.com.yslatvinsky.library.Entity.BookOfAuthorEntity;
+import com.yslatvinsky.library.Entity.BookOfAuthorEntity;
 
 import java.util.List;
 
